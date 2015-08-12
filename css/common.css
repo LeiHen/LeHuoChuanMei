@@ -24,10 +24,24 @@ a:link,a:visited,a:hover,a:active{
 .w_per75{width: 75%;}
 
 
+.w{
+	width: 1040px;
+	margin: auto;
+}
+
+
 /* 头部 */
 .header{
-
+	height:  102px;
+	background: #f9e401;
 }
+.header .logo{
+	
+}
+ 
+
+
+
 
 /* main */
 .main{
