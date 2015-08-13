@@ -36,11 +36,39 @@ a:link,a:visited,a:hover,a:active{
 	background: #f9e401;
 }
 .header .logo{
-	
+	display: inline-block;
+	+display: inline;
+	+zoom:1;
+	float: left;
 }
- 
 
 
+/* 主导航 */
+.nav_main{
+	float: right;
+	text-align: right;
+	bottom: 10px;
+	padding:40px 0 0 0;
+}
+.nav_main .link{
+	display: inline-block;
+	+display: inline;
+	+zoom: 1;
+	width: 118px;
+	height: 52px;
+	line-height: 52px;
+	color: #000000;
+	text-align: center;
+	border-radius: 4px;
+	margin: 0 0 0 10px;
+	font-size: 1.6em;
+}
+
+.nav_main .link:hover,
+.nav_main .hover{
+	color:#fff;
+	background: #e78300;
+}
 
 
 /* main */
@@ -50,7 +78,20 @@ a:link,a:visited,a:hover,a:active{
 
 /* footer*/
 .footer{
-
+	background: #f9e401;
+}
+.footer .company_profile{
+	background: url(../images/bg_foot_detail.png) no-repeat 0 0;
+	height: 112px;
+	width: 383px;
+	margin: 20px 0 10px 0 ;
+	padding: 30px 20px;
+	color: #fff;
+	font-size: 1.6em;
+	line-height: 1.8em;
+}
+.footer .logo{
+	display: block;
 }
 
 
