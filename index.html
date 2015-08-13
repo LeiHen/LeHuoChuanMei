@@ -30,11 +30,17 @@
 		<link rel="stylesheet" href="css/common.css">
 		<link rel="stylesheet" href="css/page.css">
 		<link rel="stylesheet" href="css/font.css">
-		<link rel="stylesheet" href="css/responsive.css">		
+		<link rel="stylesheet" href="css/responsive.css">
+
+		<link rel="stylesheet" href="css/mF_YSlider.css">			
+		
+		<style>
+
+        </style>
 	</head>
 	<body>	
 		<!-- header [[ -->
-		<header class="header">
+		<header class="header w_min">
 			<div class="w">
 				<img src="images/logo.png" alt="" class="logo">
 
@@ -53,15 +59,97 @@
 		<!-- header ]]  -->
        
         <!-- banner [[ -->
-        <div class="w mtb10 mlr20 banner_index">
+        <div class="w ptb10 w_min" >
+           
+            <div class="fl pl20">
+               
+                <div id="boxID" class="banner_index" style="visibility:hidden"><!--焦点图盒子-->
+				  <div class="loading"><span>请稍候...</span></div><!--载入画面(可删除)-->
+				  <ul class="pic"><!--内容列表-->
+				        <li><a href="#"><img src="images/banner/1.jpg" thumb="" alt="标题1" text="详细描述1" /></a></li>
+				        <li><a href="#"><img src="images/banner/2.jpg" thumb="" alt="标题2" text="详细描述2" /></a></li>
+				        <li><a href="#"><img src="images/banner/3.jpg" thumb="" alt="标题3" text="详细描述3" /></a></li>
+				        <li><a href="#"><img src="images/banner/4.jpg" thumb="" alt="标题4" text="详细描述4" /></a></li>
+				        <li><a href="#"><img src="images/banner/5.jpg" thumb="" alt="标题5" text="详细描述5" /></a></li>
+				  </ul>
+				</div>
+                
+            </div>
+            
+            
+            <div class="fr">
+            	
+            </div>
+            
+
+            
+            <div class="clear"></div>
             
         </div>
         <!-- banner ]] -->
+        
+        <!-- special [[ -->
+        <div class="w m_special">
+            <img src="images/signboard/img_01_1040x82.jpg" alt="" class="signboard">
+            <ul class="ul_title">
+                <li class="itme">
+                    <span class="ordinal">专题一</span>
+                    <span class="title">2010.7.3 张杰 天街地产 奥体中心万人演唱会</span>
+                </li>
+            </ul>
+            
+            <ul class="ul_img">
+                <li class="itme"><img src="images/signboard/img/1/img_01_1000x538.jpg" alt="" class="img"></li>
+            </ul>
+            
+<!--            <a href="#" class=""></a>-->
+<!--            <a href="#" class=""></a>-->
+        </div>
+        
+        <div class="w m_special">
+            <img src="images/signboard/img_02_1040x82.jpg" alt="" class="signboard">
+            <ul class="ul_title">
+                <li class="itme">
+                    <span class="ordinal">专题二</span>
+                    <span class="title">2014.12 英国护肤品牌 多保雅 北京新品发布会</span>
+                </li>
+            </ul>
+            
+            <ul class="ul_img">
+                <li class="itme"><img src="images/signboard/img/1/img_01_1000x538.jpg" alt="" class="img"></li>
+            </ul>
+            
+<!--            <a href="#" class=""></a>-->
+<!--            <a href="#" class=""></a>-->
+            </ul>
+            
+
+        </div>
+        
+        <div class="w m_special">
+            <img src="images/signboard/img_03_1040x82.jpg" alt="" class="signboard">
+            
+            <ul class="ul_title">
+                <li class="itme">
+                    <span class="ordinal">专题三</span>
+                    <span class="title">2013.4.20 林志玲 国际春夏新品发布 </span>
+                </li>
+            </ul>
+            
+            <ul class="ul_img">
+                <li class="itme"><img src="images/signboard/img/3/img_01_1000x538.jpg" alt="" class="img"></li>
+            
+<!--            <a href="#" class=""></a>-->
+<!--            <a href="#" class=""></a>-->
+            </ul>
+        </div>
+        <!-- special ]] -->
+        
        
         
         
         <!-- footer [[ -->
-        <footer class="footer">
+        <footer class="footer w_min">
             <div class="w clearFix ptb20">
                 <div class="fl">
                     <img src="images/log_bottom.jpg" alt="" class="logo" alt="乐活媒体" title="乐活媒体">
@@ -70,7 +158,7 @@
                     </div>
                 </div>
                 
-                <div class="fr">
+                <div class="fr w_per50">
                     <nav class="nav_bottom">
                         <a href="#" class="link">关于乐活</a>
                         <a href="#" class="link">乐活动态</a>
@@ -93,18 +181,20 @@
                         </li>
                         
                     </ul>
-                    <ul class="">
-                        <li class="litm">Tel：400-026-4826</li>
-                        <li class="litm">Fax：010-56879211</li>
+                    <ul class="info g_col_2">
+                        <li class="litm span">Tel：400-026-4826</li>
+                        <li class="litm span">Fax：010-56879211</li>
                     </ul>
                     
                 </div>
                 
+                <div class="clear"></div>
                 
-                <div class="info">
-                    <h class="title">乐活动力（北京）文化传播有限公司</h>
-                    <input type="text">
-                    <input type="submit" value="搜索">
+                <div class="info search">
+                    <h1 class="title">乐活动力（北京）文化传播有限公司</h1>
+                    <input type="submit" value="搜索" class="submit">
+                    <input type="text" class="input_txt">
+                    
                 </div>
             </div>
         </footer>
@@ -128,6 +218,8 @@
         <script src="js/common.js"></script>
         <script src="js/page.js"></script>
         
+        <script src="js/lib/myfocus-1.2.3.min.js"></script>
+        <script src="js/lib/mF_YSlider.js"></script>
 		
 		
 		<!-- css3兼容低版本 -->
@@ -153,6 +245,14 @@
         <script type="text/javascript">	
 			//初始化 统一入口
 			function init(){
+                $('#boxID').myFocus({
+				    pattern:'mF_YSlider',
+				    time:3,
+				    trigger:'click',
+				    width:640,
+    				height:360
+				});
+                
 
 			}
 			init();
