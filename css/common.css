@@ -118,21 +118,63 @@ a:link,a:visited,a:hover,a:active{
 
 /* 专题 index */
 .m_special{
-
+	position: relative;
 }
 .m_special .signboard{
 	display: block;
 	margin: 10px auto;
+	
+}
+
+
+.m_special .btn_l,
+.m_special .btn_r{
+	width: 20px;
+	height: 40px;
+	display: block;
+	position: absolute;
+	top: 50%;
+	margin: 0px 0 0 0;
+
+}
+
+.m_special .btn_l{
+	background: url(../images/banner_btn_l.png) no-repeat 0 0;
+	left: 0;
+}
+.m_special .btn_r{
+	background: url(../images/banner_btn_r.png) no-repeat 0 0;
+	right: 0;
+}
+.m_special .ul_wrap_title,
+.m_special .ul_wrap_img{
+	width: 1000px;
+	margin: 10px auto;
+	overflow: hidden;
+}
+
+
+.m_special .ul_title,
+.m_special .ul_img{
+	width: 1000px;
+	position: relative;
+}
+
+
+
+.m_special .ul_wrap_title{
+	height: 48px;
 }
 
 .m_special .ul_title{
-	margin: 0 20px;
+	
 }
 .m_special .ul_title .itme{
 	background: url(../images/bg_signboard_title.png) no-repeat center center;
 	width: 1000px;
 	height: 48px;
-	margin: 10px auto;
+	float: left;
+	/*margin: 10px auto;*/
 }
 .m_special .ul_title .itme .ordinal{
 	font-size: 2.4em;
@@ -146,14 +188,22 @@ a:link,a:visited,a:hover,a:active{
 	margin: 0 0 0 100px;
 }
 
-.m_special .ul_img{
-	width: 1000px;
-	margin: 10px auto;
-}
-.m_special .ul_img .itme{
-	
+
+.m_special .ul_wrap_img{
+
 }
 
+.m_special .ul_img{
+	height: 538px;
+}
+.m_special .ul_img .itme{
+	width: 1000px;
+	height: 538px;
+	float: left;
+}
+.m_special .ul_img .itme .img{
+	display: block;
+}
 
 /*
 	功能

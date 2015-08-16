@@ -1,4 +1,4 @@
-myFocus.extend({//*********************YSlide--翻页效果******************
+myFocus.extend({
 	mF_YSlider:function(par,F){
 		var box=F.$(par.id);
 		F.addList(box,['rePic','txt','num']);F.$c('rePic',box).innerHTML=F.$c('pic',box).innerHTML;//复制
