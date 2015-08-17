@@ -67,7 +67,7 @@ function scrollImg(time,id) {
     console.log(ulImgItmeW)
 
     function btnLR(w,l,time,lr){
-        if (lr=="l") {
+        if (lr=="r") {
             i=i+1;
 
             if(i>l-1){
@@ -78,7 +78,7 @@ function scrollImg(time,id) {
         }
         
 
-        if (lr=="r") {
+        if (lr=="l") {
             i=i-1;
 
             if(i<0){
@@ -90,12 +90,12 @@ function scrollImg(time,id) {
         };
 
         ulImg.stop().animate({
-            left: -i * 1000
+            left: -i * w
         },time);
 
 
         ulTitle.stop().animate({
-            left: -i * 1000
+            left: -i * w
         },time);
 
     }
@@ -117,23 +117,86 @@ function scrollImg(time,id) {
  * @author   :Nice
  * @dependent:视频切换
  */
-function videoBanner(id){
+function scrollVideoBanner(id,time){
     var e=$("#"+id),
         ul=e.find('.ul'),
         ulItme=ul.find('.itme'),
         nav=e.find('.nav'),
         navItme=nav.find('.itme');
+       
 
-    navItme.hover(function() {
-        var i=$(this).index();
+
+    var ulItmeL = ulItme.length,
+        ulItmeW = ulItme.width()+20;
+
+    var btnL = e.find('.btn_l');
+    var btnR = e.find('.btn_r');
+
+    //初始化
+    var i=0;
+    var direction;
+
+    $(nav[0]).addClass('hover');
+
+    ul.width(ulItmeW*ulItmeL);
+    if (ulItmeL>3) {
+        ulItmeL=3;
+    };
+
+    // navItme.hover(function() {
+    //     var i=$(this).index();
+    //     navItme.removeClass('hover');
+    //     $(this).addClass('hover');
+
+    //     ul.stop().animate({left: -i*340}, 1000)
+
+    // }, function() {
+        
+    // });
+
+
+    function btnLR(w,l,time,lr){
+        console.log("w:"+w+"");
+
+        if (lr=="r") {
+            i=i+1;
+
+            if(i>l-1){
+                i=0
+            }else{
+                i;
+            }
+        }
+        
+
+        if (lr=="l") {
+            i=i-1;
+
+            if(i<0){
+                i=l-1;
+            }else{
+                i;
+            }
+
+        };
+
+
+        ul.stop().animate({
+            left: -i * w
+        },time);
+
+
+        ul.stop().animate({
+            left: -i * w
+        },time);
+
         navItme.removeClass('hover');
-        $(this).addClass('hover');
+        $(navItme[i]).addClass('hover');
+    }
+    
 
-        ul.stop().animate({left: -i*340}, 1000)
-
-    }, function() {
-        /* Stuff to do when the mouse leaves the element */
-    });
+    btnL.click(function(){btnLR(ulItmeW,ulItmeL,time,"l")});
+    btnR.click(function(){btnLR(ulItmeW,ulItmeL,time,"r")});
 
 
 

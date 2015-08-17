@@ -14,8 +14,26 @@
 	margin: 0 20px;
 	overflow: hidden;
 	background: #f9e401;
-	/*position: relative;*/
+	position: relative;
 }
+
+.video_banner .btn_l,
+.video_banner .btn_r{
+	position: absolute;
+	display: block;
+	top: 120px;
+	margin: -12px 0 0 0;
+	width: 14px;
+	height: 24px;
+	z-index: 2;
+}
+.video_banner .btn_l{
+	left: 0;
+}
+.video_banner .btn_r{
+	right: 0;
+}
+
 .video_banner .ul{
 	position: relative;
 	height: 240px;

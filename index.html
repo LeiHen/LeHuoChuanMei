@@ -81,15 +81,17 @@
             <div class="fr">
             	<div id="videoBanner" class="video_banner">
                    
-<!--
-            	    <a class="btnL"><img src="" alt="" class="img"></a>
-             	    <a class="btnR"><img src="" alt="" class="img"></a>
--->
+
+            	    <a class="btn_l"><img src="images/banner_video_btn_l.png" alt="" class="img"></a>
+             	    <a class="btn_r"><img src="images/banner_video_btn_r.png" alt="" class="img"></a>
+
 
             		<ul class="ul">
-            			<li class="itme"><iframe width=320 height=220 src="http://player.youku.com/embed/XMTMxMDU2ODU3Ng==" frameborder=0 allowfullscreen></iframe></li>
-            			<li class="itme"><iframe width=320 height=220 src="http://player.youku.com/embed/XODIwMzY5NDQ0" frameborder=0 allowfullscreen></iframe></li>
-            			<li class="itme"><iframe width=320 height=220 src="http://player.youku.com/embed/XMTMxMTY2MjM5Ng==" frameborder=0 allowfullscreen></iframe></li>
+            			<li class="itme"><embed src="http://player.youku.com/player.php/sid/XMTMxMDU2ODU3Ng==/v.swf" allowFullScreen="true" quality="high" width="320" height="220" align="middle" allowScriptAccess="always" type="application/x-shockwave-flash" wmode="transparent"></embed></li>
+
+            			<li class="itme"><embed src="http://player.youku.com/player.php/sid/XODIwMzY5NDQ0/v.swf" allowFullScreen="true" quality="high" width="320" height="220" align="middle" allowScriptAccess="always" type="application/x-shockwave-flash" wmode="transparent"></embed></li>
+
+            			<li class="itme"><embed src="http://player.youku.com/player.php/sid/XMTMxMTY2MjM5Ng==/v.swf" allowFullScreen="true" quality="high" width="320" height="220" align="middle" allowScriptAccess="always" type="application/x-shockwave-flash" wmode="transparent"></embed></li>
             		</ul>
             		
             		<ul class="nav">
@@ -333,7 +335,7 @@
 				});
 
 				//视频
-				 videoBanner("videoBanner");
+				scrollVideoBanner("videoBanner",1000);
 				
 
                 //专题
