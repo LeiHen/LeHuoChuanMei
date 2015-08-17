@@ -7,6 +7,63 @@
 	height: 360px;
 }
 
+/* 视频 */
+.video_banner{
+	width: 340px;
+	height: 360px;
+	margin: 0 20px;
+	overflow: hidden;
+	background: #f9e401;
+	/*position: relative;*/
+}
+.video_banner .ul{
+	position: relative;
+	height: 240px;
+	width: 1020px;
+}
+.video_banner .ul .itme{
+	width: 320px;
+	height: 220px;
+	padding: 10px;
+	float: left;
+}
+.video_banner .nav .ul .itme iframe{
+	width: 320px;
+	height: 220px;
+}
+
+.video_banner .nav{
+
+}
+.video_banner .nav .itme{
+	background:url(../images/banner_video_btn_icon.png) no-repeat 10px center;
+	height: 36px;
+	line-height: 36px;
+	color: #000;
+	font-size: 1.4em;
+	padding: 0 0 0 30px;
+}
+
+.video_banner .nav .itme a{
+	color: #000;
+	display: block;
+}
+
+
+.video_banner .nav .itme:hover,
+.video_banner .nav .hover{
+	background:url(../images/banner_video_btn_icon_hover.png) no-repeat 10px center;
+}
+
+
+.video_banner .nav .itme:hover,
+.video_banner .nav .itme:hover a,
+.video_banner .nav .hover,
+.video_banner .nav .hover a{
+	color: #e78200;
+}
+
+
 
 /* css3 动画 */
 .nav_main .link{

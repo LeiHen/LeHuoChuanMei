@@ -112,9 +112,34 @@ function scrollImg(time,id) {
 
 
 
+/**
+ * @name     :videoBanner
+ * @author   :Nice
+ * @dependent:视频切换
+ */
+function videoBanner(id){
+    var e=$("#"+id),
+        ul=e.find('.ul'),
+        ulItme=ul.find('.itme'),
+        nav=e.find('.nav'),
+        navItme=nav.find('.itme');
+
+    navItme.hover(function() {
+        var i=$(this).index();
+        navItme.removeClass('hover');
+        $(this).addClass('hover');
+
+        ul.stop().animate({left: -i*340}, 1000)
+
+    }, function() {
+        /* Stuff to do when the mouse leaves the element */
+    });
 
 
 
+
+}
+/* @end **/
 
 /**
  * @name		:
